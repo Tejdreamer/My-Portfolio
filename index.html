@@ -3,233 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/474c6d9ba8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo22.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <b class="close" onclick="closemenu()">X</b>
-                </ul>
-                <p class="menu" onclick="openmenu()" ><i class="fa fa-bars"></i></p>
-            </nav>
+   <div  class="container">
+      <nav>
+        <img  class="logo" src="./images/logo22.png" alt="borked=Image">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <p class="menu" onclick="openmenu()" ><i class="fa fa-bars"></i></p>
+       </nav>
+       
 
-            <div class="header-text">
+       <div  class="header-text">
                 <h1>Hi, I'm <span>Tejeswar Reddy</span><br>Chinthala</h1>
                 <p class="content">🚀 Tech Enthusiast & Web Developer 🌐 | 🎧 Music Maven | 👗 Fashion Aficionado | ✈️ Wanderer & Culture Explorer | 💻 Passionate about Learning & Creating | 🌟 Enjoying the Journey, One Line of Code at a Time | 🌍 Embracing the Beauty of Solo Adventures. Welcome to my digital space!</p>
-            </div>
         </div>
+   
+       </div>
     </div>
 
-<!------------about---------------->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/photo.jpg">
-                </div>
-
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p class="about-me">As a tech enthusiast and web developer, I delve into the intricacies of code and creativity, weaving digital experiences that bridge technology and artistry.
-                        Beyond the screen,I find inspiration in diverse musical melodies, a source of solace that sets the tone for my creative endeavors.  I am enamored by fashion, finding inspiration in styles that reflect individuality.
-                         With a passion for exploring diverse cultures through travel,
-                         I believe each journey shapes my understanding of the world. Family is my cornerstone, an unwavering support system that fuels my drive. Guided by principles of self-respect,
-                          I value collaborative work, cherishing the synergy that emerges from teamwork. Every day is an opportunity to evolve, to become a better version of myself, 
-                       and to connect meaningfully with others.</p>
-                    
-                    <div class="tab-titles">
-                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
-                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
-                        <div class="tab-links" onclick="opentab('education')">Education</div>
+    <!-- About -->
+    <section>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./images/photo.jpg">
                     </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Language:C++,Java,Python,javascript</span><br></li>
-                            <li><span>Database:SQL,MongoDB</span><br></li>
-                            <li><span>Frontend:React</span><br></li>
-                            <li><span>Backend:Express,Node</span><br></li>
-                            <li><span>Version-control:git,github</span><br></li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>June 2024-current</span><br>Phyev-Mobility(Backend-Intern)</li>
-                            <li><span>March 2024-June 2024</span><br>PWC(Price Water Coopers)(Data Enginering trainee)</li>
-                            <li><span>Dec 2023-Jan 2024</span><br>Business Web Solutions(Web Develper Intern)</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2021-present</span><br>Sastra University</li>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="about-me">As a tech enthusiast and web developer, I delve into the intricacies of code and creativity, weaving digital experiences that bridge technology and artistry.
+                            Beyond the screen,I find inspiration in diverse musical melodies, a source of solace that sets the tone for my creative endeavors.  I am enamored by fashion, finding inspiration in styles that reflect individuality.
+                             With a passion for exploring diverse cultures through travel,
+                             I believe each journey shapes my understanding of the world. Family is my cornerstone, an unwavering support system that fuels my drive. Guided by principles of self-respect,
+                              I value collaborative work, cherishing the synergy that emerges from teamwork. Every day is an opportunity to evolve, to become a better version of myself, 
+                           and to connect meaningfully with others.</p>
+                        </p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Language:</span><br>C++,Java,Python,javascript</li>
+                                <li><span>Database:</span><br>SQL,MongoDB</li>
+                                <li><span>Frontend:</span><br>React</li>
+                                <li><span>Backend:</span><br>Express,Node</li>
+                                <li><span>Version-control:</span><br>git,github</li>
+                            </ul>              
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021-present</span><br>Sastra University</li>
                             <li><span>2019-2021</span><br>Nano Junior College</li>
                             <li><span>2018</span><br>Hyderabad public school,kadapa</li>
-                        </ul>
+                            </ul>            
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019</span><br>Chaitanya Techno</li>
+                                <li><span>2021</span><br> Chaitanya College</li>
+                                <li><span>2025</span><br> SASTRA University (present)</li>
+                            </ul>            
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-<div id="work">
+    </section>
+<!-- portfolio -->
+  <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
-
         <div class="work-list">
             <div class="work">
-                <img src="images/work-2.jpg">
-
-                <div class="layer">
-                    <h3>Path Visualizer</h3>
-                    <p> Visualizes efficient routing(Shortest-Path) using graph traversals. Graph and Maze algorithms were implemented</p>
-                    <p>Efficiently identifies the Shortest-Path in the grid between source to destination.</p>
-                    <a href="https://github.com/Tejdreamer/path_visualizer">Learn More</a>
-                </div>
-
-            </div>
-
-            <div class="work">
-                <img src="images/work-1.jpg">
-
+                <img src="images/work-1.jpg" width="75%" height="70%">
                 <div class="layer">
                     <h3>Job-Fit</h3>
                     <p> Cross-platform application(IOS and Android) that allows you to
                         search for jobs and apply.
                        Integrated with Jsearch RapidAPI</p>
-                    <a href="https://github.com/Tejdreamer/Job_Fit">Learn More</a>
+                    <a href="https://github.com/Tejdreamer/Job_Fit"><i class="fas fa-external-link-alt"></i></a>
                 </div>
-
             </div>
-
             <div class="work">
-                <img src="images/work-3.jpg">
-
+                <img src="images/work-2.jpg" width="80%">
+                <div class="layer">
+                    <h3>Path Visualizer</h3>
+                    <p> Visualizes efficient routing(Shortest-Path) using graph traversals. Graph and Maze algorithms were implemented.Efficiently identifies the Shortest-Path in the grid between source to destination.</p>
+                    <a href="https://github.com/Tejdreamer/path_visualizer"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg"  height="70%">
                 <div class="layer">
                     <h3>Sugarcane Disease Classifier</h3>
                     <p> Model that classifies among five different categories of sugarcane
                         diseases.The resulting model achieved a remarkable accuracy of 90 percent</p>
-                    <a href="https://github.com/Tejdreamer/Sugarcane-Diseases-Classification">Learn More</a>
+                    <a href="https://github.com/Tejdreamer/Sugarcane-Diseases-Classification"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
-        <a href="https://github.com/Tejdreamer" class="btn">See more on github</a>
+        <a href="https://github.com/Tejdreamer" class="btn"> see more on github </a>
     </div>
-</div>
+  </div>
+        <!-- contact -->
 
-<!-- --------------Contact------------------ -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p id="email">Email</p>
-                <p id="phone">phone</p>
-                <a href="images/my_cv.pdf" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your email" required>
-                    <textarea name="message" rows="6" placeholder="type message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="content-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="fa-regular fa-envelope"></i>tejeswar.chinthala@gmail.com</p>
+                            <p><i class="fa-solid fa-phone"></i>7386658306</p>
+                            <div class="social-items">
+                                <a href="https://github.com/Tejdreamer"><i class="fab fa-github"></i></a>
+                                <a href="https://x.com"><i class="fab fa-twitter-square"></i></a>
+                                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/tejeswar-reddy-chinthala-041b29247/"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                           <a href="./images/my_cv.pdf" download class="btn btn2">Download CV</a>
+
+
+                        </div>  
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright by Tej Dreamer</p>
+                </div>
             </div>
         </div>
-    </div>
+     
 
-    <div class="copyright">
-        <p>Copyright by Tej Dreamer
-        </p>
-    </div>
-</div>
 
-<script>
-    var tablinks=document.getElementsByClassName("tab-links")
-    var tabcontents=document.getElementsByClassName("tab-contents")
+    <script>
+         var tablinks = document.getElementsByClassName("tab-links");
+         var tabcontents= document.getElementsByClassName("tab-contents");
+         function opentab(tabname)
+         {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+         }
+    </script>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemenu.style.right= "0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right= "-200px";
         }
 
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-    document.addEventListener('DOMContentLoaded', (event) => {
-        // Select the element with id 'hoverBox'
-        const hoverBox = document.getElementById('email');
-
-        // Add mouseover event listener to change background color to red
-        hoverBox.addEventListener('mouseover', () => {
-            hoverBox.textContent = 'tejeswar.chinthala@gmail.com';
-        });
-
-        // Add mouseout event listener to change background color back to blue
-        hoverBox.addEventListener('mouseout', () => {
-            hoverBox.textContent = 'Email';
-        });
-    });
-
-    document.addEventListener("DOMContentLoaded",(event)=>{
-        const hoverBox=document.getElementById("phone");
-
-        hoverBox.addEventListener('mouseover',()=>{
-            hoverBox.textContent='7386658306';
-        });
-
-        hoverBox.addEventListener('mouseout', () => {
-            hoverBox.textContent = 'phone';
-        });
-    });
-</script>
-
-<script>
-    var sidemenu=document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right="0";
-    }
-
-    function closemenu(){
-        sidemenu.style.right="-200px";
-    }
-</script>
-
-  
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxgNZ0VULyoSrRnHl21VqwphlU300KZEsZ43Zq_8g_6chdT-eCghjFpdkyjpkZH68C4/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg=document.getElementById("msg")
-
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {msg.innerHTML="Message sent succesfully"
-                            setTimeout(function(){
-                                msg.innerHTML=""
-                            },5000)
-                            form.reset()
-                        })
-        .catch(error => console.error('Error!', error.message))
-    })
-</script>
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwL6S-5013tc1NWQc4p6rvdS-TWzM73vf-SCuA8Yi2PWDPl22T5Kl95YSY9jRFApZeX/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function()
+                {
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    
 </body>
 </html>
